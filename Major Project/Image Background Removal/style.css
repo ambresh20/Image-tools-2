@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'poppins', sans-serif;
+	box-sizing: border-box;
+}
+html{
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+
+/* Main container part of code */
+
+.hero{
+	width: 100%;
+	height: 100vh;
+	background: url('/asset/bg\ remove\ background.jpg') ;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+/*  background: linear-gradient(to bottom, #1e528e 0%,#728a7c 50%,#e9ce5d 100%);  */
+h1{
+	background: linear-gradient(to bottom, #1e528e 0%,#728a7c 50%,#e9ce5d 100%);
+	text-align: center;
+	font-weight: 600;
+	font-size: 2rem;
+	color: #063b32;
+	letter-spacing: 3px;
+	padding-top: 2rem;
+}
+
+.card{
+	width: 400px;
+	background: rgba(135, 220, 197, 0.2);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	border-radius: 15px;
+	text-align: center;
+	color: white;
+}
+
+.card h1{
+	font-weight: 600;
+	color: #c93479;
+}
+.card img{
+	width: 260px;
+	height: 260px;
+	border-radius: 5%;
+	/* margin-top: 25px;
+	margin-bottom: 15px; */
+	margin: 0 2.5rem 1rem 2.7rem;
+}
+.card img:hover{
+	transform: scale(0.8) rotate3d(45deg);
+	cursor: pointer;
+}
+
+label{
+	outline: none;
+	display: block;
+	font-size: 18px;
+	background: #e3362c;
+	color: #fff;
+	padding: 12px;
+	margin: 10px auto;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: o.3s;
+	/* width: 15vw; */
+}
+label:hover{
+	border-color:#4070f4;
+	background-color: #fff;
+	color: #fa0051;
+	font-weight: 500;
+	letter-spacing: 1.5px;
+	transition: 0.15s;
+	transition: 0.8s;
+}
+
+input{
+	display: none;
+}
+
+.btn{
+	border: 1px solid #0295f7;
+	background: none;
+	padding: 10px 20px;
+	font-size: 20px;
+	font-family: "montserrat";
+	cursor: pointer;
+	margin: 10px;
+	transition: 0.8s;
+	overflow: hidden;
+	position: relative;
+}
+
+.btn1, .btn2{
+	color: #0295f7;
+	position: relative;
+	z-index: 4;
+}
+
+.btn1:hover, .btn2:hover{
+	color: #fff;
+	letter-spacing: 6px;
+}
+
+.btn::before{
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #0295f7;
+	z-index: -1;
+	transition: 0.8s;
+}
+
+.btn1::before{
+	top: 0;
+	border-radius: 0 0 50% 50%;
+}
+.btn2::before{
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+.btn1:hover::before, .btn2:hover::before{
+	height: 180%;
+}
+
+
+@media (max-width:430px){
+	h1{
+		font-size: 1.5rem;
+	}
+	.card{
+		width: 270px;
+	}
+	.card img{
+		width: 220px;
+		height: 200px;
+		/* margin-top: 0px;
+		margin-bottom: 10px; */
+		margin: 0px 0.5rem 1rem 0.2rem;;
+	}
+	
+	label{
+		font-size: 16px;
+		padding: 10px;
+		margin: 8px 18px;
+	}
+
+}
+
+
+
+/* Top Button */
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50%;
+}
+  
+#myBtn:hover {
+	background-color: #35a439;
+}
+
+/* Footer Style   */
+footer{
+	background-color: #0b0028;
+	color: whitesmoke;
+	height: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+  
+.namelink{
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: aqua;
+}

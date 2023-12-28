@@ -1,0 +1,227 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+	overflow-x: hidden;
+}
+
+/* new box start */
+.header {
+    background-image: url(/asset/search\ page\ background.jpg);
+    text-align: center;
+    padding: 20px;
+    height: 55vh;
+}
+.heading {
+    margin-top: 1rem;
+}
+.header h1 {
+    /* color: white; */
+    /* font-size: 40px; */
+    text-transform:uppercase;
+    font-size:72px;
+    font-family:'Verdana';
+    padding:30px;
+}
+
+.search-bar {
+    margin: 20px auto;
+    width: 100%;
+    text-align: center;
+}
+
+input {
+    width: 30%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    outline: none;
+
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    border: 2px solid #DDDDDD;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+input[type=text]:focus {
+    box-shadow:(0 0 5px rgb(74, 206, 242));
+    padding: 10px;
+    border: 3px solid rgb(76, 207, 243);
+} 
+
+#search-btn{
+    padding: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    width: 6rem;
+}
+/* box end */
+
+
+
+
+form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 60px;
+}
+
+#search-input{
+	width: 60%;
+	max-width: 400px;
+	padding: 10px 20px;
+	border: none;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	font-size: 18px;
+	color: #333;
+}
+
+#search-button{
+	padding: 10px 20px;
+	background-color: #138065;
+	color: #fff;
+	border: none;
+	font-size: 18px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	cursor: pointer;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+.search-results{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	/* max-width: 1200px; */
+	width: 100%;
+	margin: 0 0;
+	padding: 1.5rem;
+	/* background-color: #44b09e;
+    background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%); */
+}
+
+.search-result{
+	margin-bottom: 60px;
+	width: 30%;
+	height: 100%;
+	border-radius: 5px;
+	box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+	overflow: hidden;
+}
+
+.search-result img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: opacity 0.2s ease-in-out;
+	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.search-result img:hover{
+	opacity: .8;
+}
+
+.search-result a{
+	font-size: 18px;
+	text-decoration: none;
+	color: #333;
+	display: block;
+	padding: 0px;
+	text-transform: capitalize;
+	text-align: center;
+}
+
+#show-more-button{
+	background-color: #008cba;
+	font-size: 18px;
+	border: none;
+	color: #fff;
+	padding: 10px 20px;
+	text-align: center;
+	display: block;
+	margin: 30px auto;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none; 
+}
+
+@media screen and (max-width:768px) {
+	.search-results{
+		padding: 20px;
+	}
+	.search-result{
+		width: 45%;
+	}
+	.header{
+		height: 30vh;
+	}
+	.header h1{
+		font-size: 2rem;
+		padding: 10px;
+	}
+	
+}
+
+@media screen and (max-width:480px) {
+	.search-result{
+		width: 100%;
+	}
+}
+
+
+
+
+
+/* Top Button */
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	z-index: 99;
+	border: none;
+	outline: none;
+	background-color: red;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border-radius: 50%;
+}
+  
+#myBtn:hover {
+	background-color: #35a439;
+}
+
+/* Footer Style   */
+footer{
+	background-color: #0b0028;
+	color: whitesmoke;
+	height: 8vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+  
+.namelink{
+	text-decoration: none;
+	font-size: 1.2rem;
+	color: aqua;
+}

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/asset/favicon-icon.png">
+	<title>NavBar Using Tailwinds</title>
+	<link rel="stylesheet" href="/asset/style.css">
+</head>
+<body>
+	
+    <nav class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-5">
+
+	    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-0">
+	        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+		  <img src="/asset/image tool logo.jpg" class="h-14 w-14 rounded-full" alt="Logo" />
+		  <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white text-cyan-400">Image Tools</span>
+	        </a>
+	        <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+		  <span class="sr-only">Open main menu</span>
+		  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+			  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+		  </svg>
+	        </button>
+	        <div class="hidden w-full md:block md:w-auto " id="navbar-default">
+		        <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+		  <li>
+			<a href="#" class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-sky-50 md:p-0 " aria-current="page">Home</a>
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Generator</a>
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Search</a>
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Random</a>
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">BG Remove</a>
+		  </li>
+		  <li>
+			<a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Editing</a>
+		  </li>
+		        </ul>
+	        </div>
+	    </div>
+    </nav>
+	
+
+
+	<section class="articles">
+
+		<article>
+		  <div class="article-wrapper">
+			<figure>
+			  <img src="/asset/image generator Stable.jpg" alt="stable" />
+			</figure>
+			<div class="article-body">
+			  <h2>Image Generator</h2>
+			  <p>
+				Stable Diffusion is a powerful AI model that can generate images from text descriptions. It's known for its ability to create photorealistic and artistic images, with a high degree of control over the composition and style.
+			  </p>
+			</div>
+			<div class="trynow"><a href="/Image generator Using Stable Diffuse/index.html">Try Now</a></div>
+		  </div>
+		</article>
+
+
+		<article>
+		  <div class="article-wrapper">
+			<figure>
+			  <img src="/asset/image generarot Hugging.jpg" alt="" />
+			</figure>
+			<div class="article-body">
+			  <h2>Image Generator</h2>
+			  <p>
+				A text-to-image Hugging Face model trained on a massive dataset of text and images.
+				Creates images based on your text prompts . It is base on Hugging face API
+			  </p>
+			</div>
+			<div class="trynow"><a href="/Image Generator Using Hugging face/index.html">Try Now</a></div>
+		  </div>
+		</article>
+
+
+		<article>
+		  <div class="article-wrapper">
+			<figure>
+			  <img src="/asset/searchImage.jpg" alt="" />
+			</figure>
+			<div class="article-body">
+			  <h2>Image Search</h2>
+			  <p>
+				Image search is a technology that you find information using images instead of text. Image search is used for finding similar images based on text . User text prompt to search to similar images
+			  </p>
+			</div>
+			<div class="trynow"><a href="/Image Search/index.html">Try Now</a></div>
+		  </div>
+		</article>
+
+	  
+		<article>
+			<div class="article-wrapper">
+			  <figure>
+				<img src="/asset/random2.jpg" alt="" />
+			  </figure>
+			  <div class="article-body">
+				<h2>Random Image</h2>
+				<p>
+				    Generating random images involves creating visual content using algorithms and randomness.
+					based on quantity of Image
+				</p>
+			  </div>
+			  <div class="trynow"><a href="/Image Gallery Random/index.html">Try Now</a></div>
+			</div>
+		</article>
+
+		
+		<article>
+			<div class="article-wrapper">
+			  <figure>
+				<img src="/asset/image editor.jpg" alt="" />
+			  </figure>
+			  <div class="article-body">
+				<h2>Image Editing</h2>
+				<p> 
+                    Image editing is the process of manipulating images digitally or traditionally.
+                    Adjust brightness, contrast, and color etc.
+				</p>
+			  </div>
+			  <div class="trynow"><a href="/Image Editor JavaScript/index.html">Try Now</a></div>
+			</div>
+		</article>
+
+	</section>
+  
+
+
+	<br><br>
+	<div class="blog">
+		<h2>Image Generator</h2>
+		<p>
+			<strong>Description:</strong> An AI image generator is a tool that uses artificial intelligence algorithms to create images from scratch. These algorithms are trained on large datasets and can generate realistic and diverse images based on user inputs or predefined criteria.
+		</p>
+		<p>
+			<strong>Explanation:</strong> The AI image generator works by learning patterns and styles from existing images and then generating new images that adhere to those learned patterns. This tool is often used for creative purposes, such as generating artwork, designs, or even realistic faces that don't actually exist.
+		</p>
+	</div>
+
+	<div class="blog">
+		<h2>Image Search</h2>
+		<p>
+			<strong>Description:</strong> An AI-powered image search tool allows users to find images on the internet based on visual content rather than text. Users can input an image, and the tool will return similar images from the web.
+		</p>
+		<p>
+			<strong>Explanation:</strong> This tool uses computer vision and image recognition algorithms to analyze the features of the provided image and then searches for visually similar images in its database. It's particularly useful when users want to find more information about a specific visual element without relying on textual descriptions.
+		</p>
+	</div>
+
+	<div class="blog">
+		<h2>Random Image Creation:</h2>
+		<p>
+			<strong>Description:</strong> Random image creation tools use AI algorithms to generate unique and unpredictable images. Users can often tweak parameters or provide general guidelines, and the tool will create diverse images accordingly.
+		</p>
+		<p>
+			<strong>Explanation:</strong> These tools leverage generative models, such as Generative Adversarial Networks (GANs) or Variational Autoencoders (VAEs), to produce novel images. The randomness in the generated images allows for a wide range of creative applications, from art to conceptual design.
+		</p>
+	</div>
+
+	<div class="blog">
+		<h2>Image Edition:</h2>
+		<p>
+			<strong>Description:</strong> AI-powered image editing tools leverage machine learning algorithms to enhance, modify, or transform images automatically. These tools can perform tasks like color correction, object removal, and style transfer.
+		</p>
+		<p>
+			<strong>Explanation:</strong> Using deep learning techniques, image editing tools can understand the content of an image and make intelligent adjustments. For example, they can automatically remove red-eye, adjust brightness and contrast, or apply artistic filters based on learned styles from other images.
+		</p>
+	</div>
+
+	<div class="blog">
+		<h2>Background Removal:</h2>
+		<p>
+			<strong>Description:</strong> An AI-based background removal tool is designed to automatically remove the background from an image, leaving only the main subject. This can be useful for creating transparent images or changing the background.
+		</p>
+		<p>
+			<strong>Explanation:</strong> The tool typically employs segmentation algorithms to identify and separate the foreground (main subject) from the background. Deep learning models are trained on large datasets to accurately distinguish between objects and backgrounds, providing a quick and effective way to isolate subjects in images.
+		</p>
+	</div>
+
+
+	<div class="blog">
+		<h2>Image Format Converter:</h2>
+		<p>
+			<strong>Description:</strong> An image format converter tool uses AI algorithms to convert images from one file format to another. For example, converting PNG to JPEG, PNG to PDF, etc.
+		</p>
+		<p>
+			<strong>Explanation:</strong> The tool understands the structure of different image formats and performs the necessary transformations. It ensures that the visual content remains intact during the conversion process. AI is particularly useful in handling compression, color space, and other factors to maintain image quality across format changes.
+		</p>
+	</div>
+
+
+
+
+
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-up"></i></button>
+
+
+	<footer>
+		&copy;2023 India, All Rights Reserved by &nbsp;<i class="fa-brands fa-github fa-beat" style="color: #32e10e;"></i> &nbsp; <a href="https://github.com/ambresh20" class="namelink">Ambresh</a>  
+	</footer>
+
+
+
+	<script src="https://kit.fontawesome.com/13404514da.js" crossorigin="anonymous"></script>
+	<script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+
+	
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+</body>
+</html>

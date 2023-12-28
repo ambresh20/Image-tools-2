@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+  
+<body>
+
+
+
+    <div class="header">
+        <div class="heading">
+            <h1>Image Search </h1>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="search" placeholder="Search for images" required >
+			<!-- <div class="mic-icons">
+				<i class="fa-solid fa-microphone" id="mic-icon" style="color: #0e58d8;"></i>
+			</div> -->
+            <button id="search-btn">Search</button>
+        </div>
+    </div>
+
+    <div class="img-container">
+    </div>
+
+
+
+
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa-solid fa-circle-up"></i></button>
+
+
+	<footer>
+		&copy;2023 India, All Rights Reserved by &nbsp;<i class="fa-brands fa-github fa-beat" style="color: #32e10e;"></i> &nbsp; <a href="https://github.com/ambresh20" class="namelink">Ambresh</a>  
+	</footer>
+
+
+
+    <script src="script.js"></script>
+	<script src="https://kit.fontawesome.com/13404514da.js" crossorigin="anonymous"></script>
+	<script>
+		// Get the button
+		let mybutton = document.getElementById("myBtn");
+		
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+		
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+		
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+	</script>
+  
+</body>
+  
+</html>
