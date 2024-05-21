@@ -7,3 +7,9 @@
 6. Background Removal Images
 
 7. 
+
+
+Live : 
+
+
+<img width="931" alt="Screenshot 2024-05-21 152148" src="https://github.com/ambresh20/Image-tools-2/assets/90375507/82165feb-d554-4548-873b-3dfaef8cc4e8">
