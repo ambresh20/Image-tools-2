@@ -10,7 +10,7 @@
 
 <br><br>
 
-Live : imagestools.netlify.app/
+Live : (https://imagestools.netlify.app/)
 
 
 <br><br> <br>
